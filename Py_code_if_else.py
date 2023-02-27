@@ -1,4 +1,4 @@
-# if-elif-else
+# if-elif-else  -- switch-case
 
 #calcolo il valore assoluto di un numero
 n = int(input('Inserisci un numero: ')) #Inserisci un numero: -9
@@ -89,3 +89,29 @@ else:
 #0 zero
 
 
+# in Python there is no switch-case condition which is in C:
+# let's try switch-case in Python using if, elif, else
+n = int(input('Inserisci un numero: ')) #Inserisci un numero: 2
+if n == 0:
+    print('zero')
+elif n == 1 or n == 2:
+    print('uno o due')
+elif n == 3:
+    print('tre')
+else:
+    print('numero diverso da 0, 1, 2, 3')
+#uno o due
+
+
+#let's try something else using dictionary:
+num = int(input('Inserisci un numero: ')) #Inserisci un numero: 8
+conv = input('Inserisci tipo di conversione [b/o/x]: ') #Inserisci tipo di conversione [b/o/x]: b
+funcs = dict(b=bin, o=oct, x=hex)  # create a dictionary with letter associated to functions
+funcs #{'b': <built-in function bin>, 'o': <built-in function oct>, 'x': <built-in function hex>}  # this is the dictionary
+if conv in {'b', 'o', 'x'}:   # check if letter is correct for converting
+    func = funcs[conv]   # return the value of the dictionary with key conv  #  funcs[conv] will be in this case bin function, we assign it to func
+    res = func(num)   # calculate the binary of num
+    print('Risultato della conversione =:', res)
+else:
+    print('Conversione non valida')
+#Risultato della conversione =: 0b1000   # number 8 is 1000 in binary sistem, 0b is the prefix
