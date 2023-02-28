@@ -139,6 +139,7 @@ print(res) #None
 
 # if we want more values as return
 def midpoint(x1, y1, x2, y2):
+    """Return the midpoint between (x1; y1) and (x2; yw)."""
     xm = (x1 + x2) / 2
     ym = (y1 + y2) / 2
     return xm, ym   # return more values
