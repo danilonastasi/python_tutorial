@@ -46,6 +46,7 @@ pip install geemap[lidar] open3d
 
 #### now an example of code showinf Lidar data: ####
 
+# from https://pypi.org/project/gdown/
 # in order to run code where you have to download files from external source
 pip install gdown
 
