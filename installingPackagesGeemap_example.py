@@ -103,7 +103,7 @@ geemap.view_lidar(filename, cmap='terrain', backend='panel', background='white')
 geemap.view_lidar(filename, backend='open3d')
 
 
-
+# about Google Earth Engine read also https://developers.google.com/earth-engine/guides/python_install
 
 
 
