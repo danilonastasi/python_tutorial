@@ -53,7 +53,9 @@ pip install gdown
 # to upgrade
 pip install --upgrade gdown
 
-# code:
+
+####  Python code:  ###
+##  open the console python ##
 
 # from https://geemap.org/notebooks/101_lidar/
 
